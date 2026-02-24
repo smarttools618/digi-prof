@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتبة Digi-Prof للأدوات الذكية</title>
+    <meta name="description"
+        content="دليلك الشامل لأفضل أدوات الذكاء الاصطناعي والبرامج وإضافات المتصفح للمعلمين والتعليم">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <span class="hero-badge">Digi-Prof 2026</span>
+        <h1>مكتبة Digi-Prof الذكية</h1>
+        <p>دليلك الشامل لأفضل برامج وأدوات الذكاء الاصطناعي والتعليم — مُختارة بعناية للمعلمين والمربّين</p>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <div class="stat-number" id="stat-total">0</div>
+                <div class="stat-label">أداة متاحة</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="stat-sections">0</div>
+                <div class="stat-label">تصنيف فرعي</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">3</div>
+                <div class="stat-label">أقسام رئيسية</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation Tabs -->
+    <nav class="main-nav">
+        <div class="main-nav-inner">
+            <button class="nav-tab active" data-main="all">الكل</button>
+            <button class="nav-tab" data-main="website">مواقع إلكترونية</button>
+            <button class="nav-tab" data-main="software">برامج حاسوب</button>
+            <button class="nav-tab" data-main="extension">إضافات المتصفح</button>
+        </div>
+    </nav>
+
+    <!-- Sub-Filter Bar -->
+    <div class="sub-filter-bar" id="sub-filter-bar" style="display:none;">
+        <div class="sub-filter-inner"></div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <div id="tools-container"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>صُنع بإتقان بواسطة <span class="footer-brand">Digi-Prof</span> &copy; 2026</p>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <button class="modal-close" id="modal-close">&times;</button>
+                <h2 class="modal-title" id="modal-title"></h2>
+                <p class="modal-category" id="modal-category"></p>
+            </div>
+            <div class="modal-body">
+                <p class="modal-desc" id="modal-desc"></p>
+                <ul class="modal-features" id="modal-features"></ul>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-details" onclick="closeModal()">إغلاق</button>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-visit" id="modal-link">زيارة
+                    الموقع</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
