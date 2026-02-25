@@ -243,6 +243,14 @@ const toolsData = [
         fullDesc: 'FreeConferenceCall تقدم اجتماعات مجانية بالكامل مع خيارات لمشاركة الشاشة والتسجيل لعدد كبير من المستخدمين.',
         features: ['مجاني بالكامل', 'تسجيل المكالمات', 'مشاركة الشاشة']
     },
+    {
+        id: 'zoom-web', name: 'Zoom',
+        mainCat: 'website', subCat: 'meeting',
+        url: 'https://zoom.us/',
+        shortDesc: 'منصة رائدة تتيح الانضمام للاجتماعات وعقدها مباشرة عبر المتصفح.',
+        fullDesc: 'Zoom من أشهر برامج عقد الاجتماعات، يمكنك الانضمام والمشاركة في الاجتماعات مباشرة من المتصفح دون الحاجة لتثبيت أي برامج إضافية.',
+        features: ['اجتماعات عبر المتصفح', 'مشاركة الشاشة', 'جودة اتصال عالية']
+    },
 
     // --- New General AI ---
     {
@@ -341,6 +349,24 @@ const toolsData = [
         shortDesc: 'إضافة لتغيير اتجاه أي صفحة ويب (من اليمين لليسار RTL أو العكس) بضغطة زر.',
         fullDesc: 'RTL Toggle هي إضافة بسيطة وفعالة لمتصفح Chrome تتيح تغيير اتجاه أي صفحة ويب بضغطة زر واحدة. مفيدة جداً للمستخدمين العرب.',
         features: ['تبديل اتجاه الصفحة بضغطة واحدة', 'دعم RTL و LTR', 'مفيد للمحتوى العربي', 'خفيفة وسريعة', 'سهلة الاستخدام']
+    },
+
+    // --- Screen Capture ---
+    {
+        id: 'scrolling-screenshot', name: 'Scrolling screenshot tool & screen capture',
+        mainCat: 'extension', subCat: 'screen-capture',
+        url: 'https://chromewebstore.google.com/detail/scrolling-screenshot-tool/mfpiaehgjbbfednooihadalhehabhcjo',
+        shortDesc: 'إضافة لتصوير الشاشة كصور كاملة (ملاحظة: مخصصة لالتقاط الصور فقط).',
+        fullDesc: 'أداة Scrolling screenshot tool تتيح لك تصوير الشاشة بالكامل حتى مع التمرير. يرجى الملاحظة أن هذه الأداة مخصصة لالتقاط الصور فقط ولا تدعم الفيديو.',
+        features: ['تصوير صفحات الويب كاملة مع التمرير', 'التقاط صور الشاشة بجودة عالية', 'ملاحظة: تدعم التقاط الصور فقط']
+    },
+    {
+        id: 'awesome-screen-recorder', name: 'Awesome Screen Recorder & Screenshot',
+        mainCat: 'extension', subCat: 'screen-capture',
+        url: 'https://chromewebstore.google.com/detail/awesome-screen-recorder-s/nlipoenfbbikpbjkfpfillcgkoblgpmj',
+        shortDesc: 'إضافة شاملة لتصوير الشاشة (ملاحظة: تدعم التقاط كل من الصور وتسجيل الفيديو).',
+        fullDesc: 'Awesome Screen Recorder من أقوى الإضافات لتصوير الشاشة وتسجيل الفيديوهات مع إمكانية التعديل والمشاركة السهلة. تدعم الصور والفيديو معاً لتلبية كافة الاحتياجات.',
+        features: ['تسجيل فيديو الشاشة باحترافية', 'التقاط صور الشاشة', 'ملاحظة: تدعم الفيديو والصور معاً', 'أدوات تعديل وشرح مدمجة']
     }
 ];
 
@@ -370,7 +396,8 @@ const subCatLabels = {
     'remote-control': 'التحكم عن بُعد',
     'meeting': 'الاجتماعات والمؤتمرات',
     'ai-detector': 'كشف محتوى الذكاء الاصطناعي',
-    'prompt-eng': 'هندسة الأوامر'
+    'prompt-eng': 'هندسة الأوامر',
+    'screen-capture': 'تصوير الشاشة'
 };
 
 const subCatTagClass = {
@@ -390,13 +417,14 @@ const subCatTagClass = {
     'remote-control': 'tag-software',
     'meeting': 'tag-utility',
     'ai-detector': 'tag-ai',
-    'prompt-eng': 'tag-ai'
+    'prompt-eng': 'tag-ai',
+    'screen-capture': 'tag-extension'
 };
 
 const subCatsPerMain = {
     website: ['ai-model', 'image-gen', 'video-gen', 'video-editing', 'speech-to-text', 'text-to-speech', 'audio', 'education', 'meeting', 'ai-detector', 'prompt-eng', 'utility'],
     software: ['video-editing', 'recording', 'whiteboard', 'remote-control', 'meeting'],
-    extension: ['privacy', 'utility-ext']
+    extension: ['privacy', 'utility-ext', 'screen-capture']
 };
 
 /* ============================================
