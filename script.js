@@ -198,6 +198,70 @@ const toolsData = [
         features: ['ضغط الصور بدون فقدان الجودة', 'تغيير حجم الصور بسرعة', 'قص وتعديل الصور', 'تحويل بين صيغ الصور', 'إزالة خلفية الصور']
     },
 
+    // --- Prompt Engineering ---
+    {
+        id: 'generateprompt', name: 'GeneratePromptAI',
+        mainCat: 'website', subCat: 'prompt-eng',
+        url: 'https://generateprompt.ai/',
+        shortDesc: 'أداة لإنشاء وصياغة الأوامر (Prompts) لتحسين نتائج الذكاء الاصطناعي.',
+        fullDesc: 'GeneratePromptAI تتيح لك بناء الأوامر بأسلوب احترافي، مما يضمن أفضل استجابة من نماذج الذكاء الاصطناعي.',
+        features: ['هندسة أوامر احترافية', 'قوالب جاهزة', 'تحسين دقة النماذج']
+    },
+
+    // --- AI Content Detector ---
+    {
+        id: 'gptzero', name: 'GPTZero',
+        mainCat: 'website', subCat: 'ai-detector',
+        url: 'https://gptzero.me/',
+        shortDesc: 'أداة ذكية لاكتشاف النصوص المكتوبة بواسطة الذكاء الاصطناعي.',
+        fullDesc: 'GPTZero صُممت خصيصاً للمعلمين والمحترفين لاكتشاف وتحليل ما إذا كان النص قد كُتب بواسطة أدوات الذكاء الاصطناعي.',
+        features: ['دقة في الكشف', 'تسليط الضوء على النصوص المشكوك فيها', 'مصمم للقطاع التعليمي']
+    },
+    {
+        id: 'zerogpt', name: 'ZeroGPT',
+        mainCat: 'website', subCat: 'ai-detector',
+        url: 'https://www.zerogpt.com/',
+        shortDesc: 'موقع موثوق لاكتشاف المحتوى المولد بالذكاء الاصطناعي بتحديد نسبة مئوية.',
+        fullDesc: 'ZeroGPT يحلل النصوص بدقة عالية ويخبرك بنسبة الذكاء الاصطناعي في النص، مناسب للأساتذة والجامعيين.',
+        features: ['تحليل فوري وسريع', 'دعم عدة لغات', 'يعطي نسبة مئوية دقيقة']
+    },
+
+    // --- Meeting (Websites) ---
+    {
+        id: 'google-meet', name: 'Google Meet',
+        mainCat: 'website', subCat: 'meeting',
+        url: 'https://meet.google.com/',
+        shortDesc: 'منصة اجتماعات فيديو آمنة وسهلة الاستخدام من جوجل.',
+        fullDesc: 'Google Meet خدمة اتصال مجانية توفر فيديو أمن واجتماعات سريعة عبر المتصفح.',
+        features: ['لا يحتاج لتثبيت', 'تكامل من خدمات جوجل', 'مشاركة الشاشة بسهولة']
+    },
+    {
+        id: 'freeconferencecall', name: 'FreeConferenceCall',
+        mainCat: 'website', subCat: 'meeting',
+        url: 'https://www.freeconferencecall.com/',
+        shortDesc: 'أداة مجانية تتيح عقد مكالمات صوتية واجتماعات فيديو.',
+        fullDesc: 'FreeConferenceCall تقدم اجتماعات مجانية بالكامل مع خيارات لمشاركة الشاشة والتسجيل لعدد كبير من المستخدمين.',
+        features: ['مجاني بالكامل', 'تسجيل المكالمات', 'مشاركة الشاشة']
+    },
+
+    // --- New General AI ---
+    {
+        id: 'glm', name: 'GLM',
+        mainCat: 'website', subCat: 'ai-model',
+        url: 'https://chat.z.ai/',
+        shortDesc: 'نموذج ذكاء اصطناعي متقدم للمحادثات.',
+        fullDesc: 'GLM أداة ذكاء اصطناعي للمساعدة في الكتابة والمهام التحليلية المتنوعة.',
+        features: ['محادثات ذكية', 'تحليل وفهم قوي للنصوص', 'مفيد للبحث']
+    },
+    {
+        id: 'copilot-img', name: 'Microsoft Copilot',
+        mainCat: 'website', subCat: 'image-gen',
+        url: 'https://copilot.microsoft.com/',
+        shortDesc: 'توليد الصور بالذكاء الاصطناعي بواسطة مايكروسوفت بمحرك DALL-E.',
+        fullDesc: 'Microsoft Copilot يتيح لك إنشاء صور إبداعية بسهولة من خلال وصف نصي احترافي وبدقة عالية.',
+        features: ['جودة عالية للصور', 'دعم اللغة العربية', 'وصول مجاني وسهل']
+    },
+
     // ===================== SOFTWARE =====================
     // --- Video Editing ---
     {
@@ -243,6 +307,24 @@ const toolsData = [
         features: ['مفتوح المصدر', 'سبورة بيضاء تفاعلية كاملة', 'دعم القلم الرقمي واللوح التفاعلي', 'أدوات رسم وكتابة متعددة', 'تصدير الدروس كملفات PDF أو صور']
     },
 
+    // --- Meeting & Remote Control (Software) ---
+    {
+        id: 'zoom', name: 'Zoom',
+        mainCat: 'software', subCat: 'meeting',
+        url: 'https://zoom.us/',
+        shortDesc: 'برنامج رائد للاجتماعات والمؤتمرات عبر الفيديو.',
+        fullDesc: 'Zoom من أشهر برامج عقد الاجتماعات عبر الفيديو، ويتيح مشاركة الشاشة والمحادثات النصية.',
+        features: ['اتصال فيديو عالي الجودة', 'مشاركة الشاشة', 'غرف جانبية']
+    },
+    {
+        id: 'anydesk', name: 'AnyDesk',
+        mainCat: 'software', subCat: 'remote-control',
+        url: 'https://anydesk.com/',
+        shortDesc: 'برنامج رائد للتحكم بأجهزة الكمبيوتر عن بعد بسهولة وسرعة.',
+        fullDesc: 'AnyDesk للتحكم عن بعد في الحواسيب، يتيح لك الوصول إلى أي كمبيوتر من أي مكان في العالم بسرعة وأمان.',
+        features: ['تحكم سريع عن بعد', 'حجم صغير وخفيف', 'آمن ومشفر']
+    },
+
     // ===================== CHROME EXTENSIONS =====================
     {
         id: 'adguard', name: 'AdGuard',
@@ -284,7 +366,11 @@ const subCatLabels = {
     'recording': 'تسجيل وبث',
     'whiteboard': 'سبورة تفاعلية',
     'privacy': 'حماية وخصوصية',
-    'utility-ext': 'أدوات عامة'
+    'utility-ext': 'أدوات عامة',
+    'remote-control': 'التحكم عن بُعد',
+    'meeting': 'الاجتماعات والمؤتمرات',
+    'ai-detector': 'كشف محتوى الذكاء الاصطناعي',
+    'prompt-eng': 'هندسة الأوامر'
 };
 
 const subCatTagClass = {
@@ -300,12 +386,16 @@ const subCatTagClass = {
     'recording': 'tag-software',
     'whiteboard': 'tag-software',
     'privacy': 'tag-extension',
-    'utility-ext': 'tag-extension'
+    'utility-ext': 'tag-extension',
+    'remote-control': 'tag-software',
+    'meeting': 'tag-utility',
+    'ai-detector': 'tag-ai',
+    'prompt-eng': 'tag-ai'
 };
 
 const subCatsPerMain = {
-    website: ['ai-model', 'image-gen', 'video-gen', 'video-editing', 'speech-to-text', 'text-to-speech', 'audio', 'education', 'utility'],
-    software: ['video-editing', 'recording', 'whiteboard'],
+    website: ['ai-model', 'image-gen', 'video-gen', 'video-editing', 'speech-to-text', 'text-to-speech', 'audio', 'education', 'meeting', 'ai-detector', 'prompt-eng', 'utility'],
+    software: ['video-editing', 'recording', 'whiteboard', 'remote-control', 'meeting'],
     extension: ['privacy', 'utility-ext']
 };
 
